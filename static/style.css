@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+.font-size-08{
+    font-size:0.8rem!important;
+}
+
+
 .list-hover-primary{
     background:#f8f9fa!important;
     color:#343a40!important;
@@ -10,4 +15,16 @@
     background:#007bff!important;
     color:#f8f9fa!important;
     cursor:pointer;
+}
+
+.home_button{
+    background-color:#f8f9fa !important;
+}
+.home_button:hover{
+    background-color:#17a2b8 !important;
+}
+
+.home_icon{
+    width:28px !important;
+    height:28px !important;
 }
