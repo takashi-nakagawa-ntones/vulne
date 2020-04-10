@@ -1,16 +1,16 @@
 <?php
-    header('Content-Type: text/html; charset=UTF-8');
+header('Content-Type: text/html; charset=UTF-8');
 
 class constants{
     
     const VULNERABILITY_LIST = array(
-        "SQL インジェクション" => "SqlInjection",
-        "OSコマンドインジェクション" => "OSCommandInjection",
-        "クロスサイト・スクリプティング(反射型)" => "XSSReflective",
-        "クロスサイト・スクリプティング(持続型)" => "XSSPersistence",
-        "オープンリダイレクト" => "OpenRedirect",
-        "リモートファイルインクルージョン" => "RemoteFileInclusion",
-        "SSI インジェクション" => "SSIInjection",
-        "Authenication Credentials" => "AuthenicationCredentials"
+        "SqlInjection"              => "SQL インジェクション",
+        "OSCommandInjection"        => "OSコマンドインジェクション",
+        "XSSReflective"             => "クロスサイト・スクリプティング(反射型)",
+        "XSSPersistence"            => "クロスサイト・スクリプティング(持続型)",
+        "OpenRedirect"              => "オープンリダイレクト",
+        "RemoteFileInclusion"       => "リモートファイルインクルージョン",
+        "SSIInjection"              => "SSI インジェクション",
+        "AuthenicationCredentials"  => "Authenication Credentials"
     );
 }
