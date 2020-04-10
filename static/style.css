@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.list-hover-primary{
+    background:#f8f9fa!important;
+    color:#343a40!important;
+    cursor:pointer;
+}
+.list-hover-primary:hover{
+    background:#007bff!important;
+    color:#f8f9fa!important;
+    cursor:pointer;
+}
