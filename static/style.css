@@ -1,6 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+.bg-thin-blue{
+    background:#dbedff !important;
+}
+.bg-thin-orange{
+    background:#ffe5e5 !important;
+}
+
 .font-size-08{
     font-size:0.8rem!important;
 }
