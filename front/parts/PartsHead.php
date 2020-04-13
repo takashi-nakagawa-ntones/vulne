@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <h4 class="text-light float-left"><?=$_POST["title"];?></h4>
+        <h4 class="text-light float-left"><?=$_SESSION["title"];?></h4>
         <button type="button" class="btn btn-light home_button">
             <img src="./../static/home_icon.png" class="home_icon" alt="HOME">
         </button>

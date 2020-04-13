@@ -1,6 +1,34 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+.w-07{
+    width: 7% !important;
+}
+.w-08{
+    width: 8% !important;
+}
+.w-09{
+    width: 9% !important;
+}
+.w-10{
+    width: 10% !important;
+}
+.w-12{
+    width: 12% !important;
+}
+.w-20{
+    width: 20% !important;
+}
+.w-30{
+    width: 30% !important;
+}
+.w-40{
+    width: 40% !important;
+}
+.w-70{
+    width: 70% !important;
+}
 .bg-thin-blue{
     background:#dbedff !important;
 }

@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 /** 
   データベースの例外クラス
 */
