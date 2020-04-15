@@ -8,14 +8,16 @@ $testData = array();
 if($_SESSION['visit'] == 1){
 
     try{
+        
+        $pathToTestDB = "../back/SQLInjection/sqlitedb/testdb";
 
         //前回作成したデータベース削除
-        if (file_exists("../back/sqlitedb/testdb")){
-            unlink("../back/sqlitedb/testdb");
+        if (file_exists($pathToTestDB)){
+            unlink($pathToTestDB);
         }
 
         //データベース接続・作成
-        $con = new SqliteConnect("../back/sqlitedb/testdb");
+        $con = new SqliteConnect($pathToTestDB);
 
         //テスト用テーブル作成SQL
         $createSql ="

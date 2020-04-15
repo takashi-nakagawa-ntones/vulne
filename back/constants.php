@@ -13,4 +13,5 @@ class constants{
         "SSIInjection"              => "SSI インジェクション",
         "AuthenicationCredentials"  => "Authenication Credentials"
     );
+
 }

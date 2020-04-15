@@ -14,8 +14,11 @@ if(isset($_POST["user_id"]) && isset($_POST["user_pw"])){
         //DBエラーメッセージ
         $dbErrorMsg = "";
 
+        //testdbへのパス
+        $pathToTestDB = "../back/SQLInjection/sqlitedb/testdb";
+
         //データベース接続・作成
-        $con = new SqliteConnect("../back/sqlitedb/testdb");
+        $con = new SqliteConnect($pathToTestDB);
 
         //テスト用テーブル作成SQL
         $selectSql ="SELECT * FROM COMPANY WHERE ID=".$_POST["user_id"]." AND PW=".$_POST["user_pw"];

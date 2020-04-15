@@ -1,6 +1,6 @@
 <?php include_once("parts/Include.php"); ?>
-<?php include_once("./../back/createtestdb.php");?>
-<?php include_once("./../back/selecttestdb.php");?>
+<?php include_once("./../back/SqlInjection/createtestdb.php");?>
+<?php include_once("./../back/SqlInjection/selecttestdb.php");?>
 
 <?php include_once("parts/PartsHead.php"); ?>
 
@@ -16,7 +16,12 @@
             また、その攻撃を可能とする脆弱性のことである。<br>
             </div>
             <div class="text-danger font-size-08 mt-2">※ここでは意図的に脆弱性を含むプロセスが実装されています</div>
-            <div class="text-danger font-size-08">入力内容を選択して「SEND」ボタンをクリックしてください</div>
+            <div class="text-danger font-size-08 mt-2">
+                ※今回は、入力フォームにおいて攻撃コードを埋め込む検証となりますが<br>
+                　攻撃者は Hidden要素やSelectBox, CheckBox, TextArea など、あらゆるフォーム要素において<br>
+                　攻撃コードを埋め込む事が可能という事を念頭においてください。
+            </div>
+            <div class="text-primary font-size-08 mt-2">▼入力内容を選択して「SEND」ボタンをクリックしてください</div>
             <div class="card-text font-size-08 mt-3">
                 <label for="method">入力タイプの選択</label><br>
                 <select class="custom-select w-12" name="method" id="method">
@@ -24,7 +29,7 @@
                     <option value="2">個人情報全取得</option>
                     <option value="3">DBデータ破壊</option>
                 </select>
-                <span id="selectMsg" class="pl-3">想定されたケースで自信の個人情報を表示します</span>
+                <span id="selectMsg" class="pl-3">想定されたケースでユーザー情報を表示します</span>
             </div>
         </div>
     </div>
@@ -44,10 +49,6 @@
                             <label for="user_pw">User PW</label>
                             <input type="text" class="form-control" name="user_pw" id="user_pw" value="11">
                         </div>
-                        <div class="form-group">
-                            <label for="hidden_attr">Hidden</label>
-                            <input type="hidden" class="form-control" id="hidden_attr">
-                        </div>
                         <input type="hidden" name="update" id="update" value="1">
                         <button type="submit" class="btn btn-sm btn-primary w-100">SEND</button>
                     </form>
@@ -57,7 +58,7 @@
         <div class="card w-50 m-2">
             <div class="card-body bg-thin-blue">
                 <h4 class="card-title">SERVER</h4>
-                <h6 class="card-subtitle mb-2 text-muted">DataBase: (table)Personal Data</h6>
+                <h6 class="card-subtitle mb-2 text-muted">DataBase: (table) Personal Data</h6>
                 <div class="card-text">
                     <table class="table table-sm">
                         <thead>
@@ -100,6 +101,10 @@
         </div>
         <div class="card w-50 m-2">
             <div class="card-body bg-thin-blue">
+                <h4 class="card-title">SERVER EXECUTE CODE</h4>
+                <div class="card-text">
+                    <?=$selectSql;?>
+                </div>
             </div>
         </div>
     </div>
