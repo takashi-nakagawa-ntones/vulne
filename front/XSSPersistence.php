@@ -17,7 +17,10 @@
             サイトに訪れた全てのユーザに対してスクリプトが実行されるという点です<br>
             罠サイトや罠メールを経由する必要がなく、普通にサイトを訪れたユーザが被害に遭います。そのため、反射型に比べて脅威は大きなものとなります
             </div>
-            <div class="text-danger font-size-08 mt-2">※ここは前提条件などを記載します
+            <div class="text-danger font-size-08 mt-2">
+                ※脆弱性再現のため、
+                <a href="https://support.google.com/chrome/answer/95472?co=GENIE.Platform%3DDesktop&hl=ja">ブラウザのポップアップブロックを解除</a>
+                してください
             </div>
             <div class="text-danger font-size-08 mt-2">※ここでは意図的に脆弱性を含むプロセスが実装されています</div>
             <div class="text-danger font-size-08">入力内容を選択して「SEND」ボタンをクリックしてください</div>
