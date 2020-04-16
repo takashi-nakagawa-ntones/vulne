@@ -39,7 +39,7 @@
                         <input type="hidden" name="server_name" id="server_name" value="<?=$_SERVER['SERVER_NAME'];?>">
                         <input type="hidden" name="mcode" id="mcode" value="1">
                         <input type="hidden" name="update" id="update" value="1">
-                        <button type="button" id="send_button" class="btn btn-sm btn-primary w-100">SEND</button>
+                        <button type="submit" id="send_button" class="btn btn-sm btn-primary w-100">SEND</button>
                     </form>
                 </div>
             </div>
