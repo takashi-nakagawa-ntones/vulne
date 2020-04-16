@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once("sqlite.php");
 
 //テストデータ表示用
