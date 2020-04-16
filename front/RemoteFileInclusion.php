@@ -25,8 +25,8 @@
                 <select class="custom-select w-12" name="method" id="method">
                     <option value="1">通常</option>
                     <option value="2">システム情報取得</option>
-                    <option value="2">Webページ改竄</option>
-                    <option value="2">個人情報取得</option>
+                    <option value="3">Webページ改竄</option>
+                    <option value="4">個人情報取得</option>
                 </select>
                 <span id="selectMsg" class="pl-3">想定されたケースで外部ファイルを読み込み画面表示します</span>
             </div>
@@ -47,7 +47,7 @@
                         <input type="hidden" name="server_name" id="server_name" value="<?=$_SERVER['SERVER_NAME'];?>">
                         <input type="hidden" name="mcode" id="mcode" value="1">
                         <input type="hidden" name="update" id="update" value="1">
-                        <button type="submit" id="send_button" class="btn btn-sm btn-primary w-100">SEND</button>
+                        <button type="button" id="send_button" class="btn btn-sm btn-primary w-100">SEND</button>
                     </form>
                 </div>
             </div>
@@ -55,8 +55,22 @@
         <div class="card w-50 m-2">
             <div class="card-body bg-thin-blue">
                 <h4 class="card-title">SERVER</h4>
-                <div class="card-text text-info m-2">
-                    ※サーバーの状況を表示します
+                <h6 class="card-subtitle mb-2 text-muted">DataBase: (table) Personal Data</h6>
+                <div class="card-text">
+                    <table class="table table-sm">
+                        <thead>
+                            <th>ID</th><th>PW</th><th>NAME</th><th>AGE</th><th>ADDRESS</th><th>SALARY</th>
+                        </thead>
+                        <tbody>
+                            <?php if(count($testData) === 0): ?>
+                                <tr><td colspan="5" class="text-danger">※攻撃者によりDBデータは全て削除されました</td></tr>
+                            <?php else: ?>
+                                <?php foreach($testData as $key => $val): ?>
+                                    <tr><td><?=$key?><td><?=$val[0]?></td><td><?=$val[1]?></td><td><?=$val[2]?></td><td><?=$val[3]?></td><td><?=$val[4]?></td></tr>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -66,10 +80,7 @@
         <div class="card w-50 m-2">
             <div class="card-body bg-thin-orange">
                 <h4 class="card-title">CLIENT RESULT</h4>
-                <h6 class="card-subtitle text-muted">Include File</h6>
-                <div class="card-text m-2">&nbsp;<?=$includeFilePath;?></div>
-                <h6 class="card-subtitle text-muted">Include File Content</h6>
-                <div class="card-text m-2">&nbsp;<?=$fileContent;?></div>
+                <input type="hidden" id="scroll_down" name="scroll_down" value="<?=$scrollDown;?>">
                 <h6 class="card-subtitle text-muted mt-4">Result Message</h6>
                 <div class="card-text m-2">&nbsp;<?=$resultMessage;?></div>
             </div>
@@ -77,7 +88,10 @@
         <div class="card w-50 m-2">
             <div class="card-body bg-thin-blue">
                 <h4 class="card-title">SERVER RESULT</h4>
+                <h6 class="card-subtitle text-muted">Execute</h6>
                 <div class="card-text text-info m-2"><?=$resultSvMessage;?></div>
+                <h6 class="card-subtitle text-muted mt-2">Include File Content</h6>
+                <div class="card-text bg-light m-2">&nbsp;<?=$fileContent;?></div>
             </div>
         </div>
     </div>

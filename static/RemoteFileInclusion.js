@@ -37,7 +37,21 @@
             break;
         }
       }
+
+      function clickSendButton(){
+        $("#form1").attr("action", $("#user_browsing_url").val());
+        $("#form1").submit();
+
+      }
+
+      function scrollDown(){
+        if($("#scroll_down").val() === "1"){
+          $('html, body').animate({scrollTop:document.body.offsetHeight});
+        }
+      }
   
     //Init
+
+      scrollDown();
   
   })();
