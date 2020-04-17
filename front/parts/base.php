@@ -9,6 +9,12 @@
             <h4 class="card-title">Commentary</h4>
             <h6 class="card-subtitle mb-2 text-muted"></h6>
             <div class="card-text font-size-08">※ここに脆弱性の解説を記載します</div>
+            <div class="card-text m-2">
+                <div class="text-primary">◆攻撃成立条件◆</div>
+                <div class="text-primary"><small>・※ここに攻撃が成立する条件を記載します</small></div>
+                <div class="text-primary"><small>・※ここに攻撃が成立する条件を記載します</small></div>
+                <div class="text-primary"><small>・※ここに攻撃が成立する条件を記載します</small></div>
+            </div>
             <div class="text-danger font-size-08 mt-2">※ここは前提条件などを記載します
             </div>
             <div class="text-danger font-size-08 mt-2">※ここでは意図的に脆弱性を含むプロセスが実装されています</div>

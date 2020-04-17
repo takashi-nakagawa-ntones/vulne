@@ -7,23 +7,6 @@ $osExecuteCode = "";
 $mailResult = "";
 $procMessage = "";
 
-// $subject = "VULNEから送信テスト";
-// $body = "これはテストメールです。\n";
-// $to = 'alchemy.allconnect@gmail.com';
- 
-// $result = mb_send_mail($to, $subject, $body);
- 
-// if ($result){
-//     $mailResult = '成功';
-// }else {
-//     $mailResult = '失敗';
-// }
-
-// $rtn = exec('echo "これはテストです" | mail -s "テストメール" alchemy.allconnect@gmail.com');
-
-
-// $rtn = exec('mail -s ' . $title . ' ' . $address . '< ' . $message_file);
-
 if(isset($_POST)){
     if(isset($_POST["mcode"])){
         

@@ -1,5 +1,7 @@
 <?php
 
+$resultMessage = "";
+
 if(isset($_POST)){
     if(isset($_POST["mcode"])){
         switch($_POST["mcode"]){
