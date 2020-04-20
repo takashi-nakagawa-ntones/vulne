@@ -85,17 +85,17 @@
                 <h4 class="card-title">CLIENT RESULT</h4>
                 <h6 class="card-subtitle mb-2 text-muted">Personal Data</h6>
                 <div class="card-text">
-                <?php if(isset($selectData)): ?>
-                    <?php foreach($selectData as $key => $val): ?>
-                        <table class="table table-sm table-borderless w-100 m-2 bg-light">
-                            <tbody>
-                                <tr><td class="w-25">ID:</td><td class="w-25 text-info font-weight-bold"><?=$key?></td><td class="w-25">PW:</td><td class="w-25 text-info font-weight-bold"><?=$val[0]?></td></tr>
-                                <tr><td class="w-25">NAME:</td><td class="w-25 text-info font-weight-bold"><?=$val[1]?></td><td class="w-25">AGE:</td><td class="w-25 text-info font-weight-bold"><?=$val[2]?></td></tr>
-                                <tr><td class="w-25">ADDRESS:</td><td class="w-25 text-info font-weight-bold"><?=$val[3]?></td><td class="w-25">SALARY:</td><td class="w-25 text-info font-weight-bold"><?=$val[4]?></td></tr>
-                            </tbody>
-                        </table>
-                    <?php endforeach; ?>
-                <?php endif; ?>
+                    <?php if(isset($selectData)): ?>
+                        <?php foreach($selectData as $key => $val): ?>
+                            <table class="table table-sm table-borderless w-100 m-2 bg-light">
+                                <tbody>
+                                    <tr><td class="w-25">ID:</td><td class="w-25 text-info font-weight-bold"><?=$key?></td><td class="w-25">PW:</td><td class="w-25 text-info font-weight-bold"><?=$val[0]?></td></tr>
+                                    <tr><td class="w-25">NAME:</td><td class="w-25 text-info font-weight-bold"><?=$val[1]?></td><td class="w-25">AGE:</td><td class="w-25 text-info font-weight-bold"><?=$val[2]?></td></tr>
+                                    <tr><td class="w-25">ADDRESS:</td><td class="w-25 text-info font-weight-bold"><?=$val[3]?></td><td class="w-25">SALARY:</td><td class="w-25 text-info font-weight-bold"><?=$val[4]?></td></tr>
+                                </tbody>
+                            </table>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
