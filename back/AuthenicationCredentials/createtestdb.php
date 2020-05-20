@@ -8,7 +8,7 @@ if($_SESSION['visit'] == 1){
 
     try{
         
-        $pathToTestDB = "../back/SQLInjection/sqlitedb/testdb";
+        $pathToTestDB = $_SERVER['DOCUMENT_ROOT']."/vulne/back/AuthenicationCredentials/sqlitedb/testdb";
 
         //前回作成したデータベース削除
         if (file_exists($pathToTestDB)){
@@ -71,5 +71,7 @@ if($_SESSION['visit'] == 1){
 
     } catch (Exception $e) {
         $dbErrorMsg = $e->getMessage();
+    } finally {
+        $con->close();
     }
 }

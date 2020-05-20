@@ -8,7 +8,7 @@ $testData = array();
 
 try{
     
-    $pathToTestDB = "../back/SQLInjection/sqlitedb/testdb";
+    $pathToTestDB = $_SERVER['DOCUMENT_ROOT']."/vulne/back/RemoteFileInclusion/sqlitedb/testdb";
 
     //前回作成したデータベース削除
     if (file_exists($pathToTestDB)){
@@ -71,4 +71,6 @@ try{
 
 } catch (Exception $e) {
     $dbErrorMsg = $e->getMessage();
+} finally{
+    $con->close();
 }

@@ -1,6 +1,7 @@
 <?php include_once("parts/Include.php"); ?>
-<?php include_once("./../back/SqlInjection/createtestdb.php");?>
-<?php include_once("./../back/SqlInjection/selecttestdb.php");?>
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/vulne/back/SqlInjection/createtestdb.php");?>
+
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/vulne/back/SqlInjection/selecttestdb.php");?>
 
 <?php include_once("parts/PartsHead.php"); ?>
 

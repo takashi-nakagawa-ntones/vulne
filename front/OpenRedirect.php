@@ -1,6 +1,6 @@
 
 <?php include_once("parts/Include.php"); ?>
-<?php include_once("./../back/OpenRedirect/openredirect.php");?>
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/vulne/back/OpenRedirect/openredirect.php");?>
 
 <?php include_once("parts/PartsHead.php"); ?>
 
@@ -41,7 +41,7 @@
                     <form name="form1" id="form1" action="#" method="post">
                         <div class="form-group">
                             <label for="user_browsing_url">URL</label>
-                            <input type="text" class="form-control" name="user_browsing_url" id="user_browsing_url" value="//<?=$_SERVER['SERVER_NAME'];?>/front/OpenRedirect.php?url=//<?=$_SERVER['SERVER_NAME'];?>/front/OpenRedirect.php">
+                            <input type="text" class="form-control" name="user_browsing_url" id="user_browsing_url" value="//<?=$_SERVER['SERVER_NAME'];?>/vulne/front/OpenRedirect.php?url=//<?=$_SERVER['SERVER_NAME'];?>/vulne/front/OpenRedirect.php">
                         </div>
                         <input type="hidden" name="server_name" id="server_name" value="<?=$_SERVER['SERVER_NAME'];?>">
                         <input type="hidden" name="mcode" id="mcode" value="1">

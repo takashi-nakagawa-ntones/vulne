@@ -21,10 +21,10 @@
         //auto input
         switch(mcode){
           case "1":
-            $("#user_browsing_url").val("//" + domain + "/front/OpenRedirect.php?url=//" + domain + "/front/OpenRedirect.php");
+            $("#user_browsing_url").val("//" + domain + "/vulne/front/OpenRedirect.php?url=//" + domain + "/vulne/front/OpenRedirect.php");
             break;
           case "2":
-            $("#user_browsing_url").val("//" + domain + "/front/OpenRedirect.php?url=//" + domain + "/front/fishing.php");
+            $("#user_browsing_url").val("//" + domain + "/vulne/front/OpenRedirect.php?url=//" + domain + "/vulne/front/fishing.php");
             break;
         }
       }

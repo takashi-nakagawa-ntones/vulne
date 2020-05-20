@@ -1,9 +1,9 @@
 
 <?php include_once("parts/Include.php"); ?>
 
-<?php include_once("./../back/AuthenicationCredentials/createtestdb.php");?>
-<?php include_once("./../back/AuthenicationCredentials/selecttestdb.php");?>
-<?php include_once("./../back/AuthenicationCredentials/authenicationcredentials.php");?>
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/vulne/back/AuthenicationCredentials/createtestdb.php");?>
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/vulne/back/AuthenicationCredentials/selecttestdb.php");?>
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/vulne/back/AuthenicationCredentials/authenicationcredentials.php");?>
 
 <?php include_once("parts/PartsHead.php"); ?>
 

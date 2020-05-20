@@ -21,7 +21,7 @@
     function changeMethod(e){
       var mcode = $("select[name='method']").val();
       var serverName = $("#server_name").val();
-      var url = "//" + serverName + "/front/XSSReflective.php";
+      var url = "//" + serverName + "/vulne/front/XSSReflective.php";
       $("#mcode").val(mcode);
       $("#selectMsg").html(selectMethodMsg[mcode]);
       //auto input

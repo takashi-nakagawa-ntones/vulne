@@ -15,7 +15,7 @@ if(isset($_POST["user_id"]) && isset($_POST["user_pw"])){
         $dbErrorMsg = "";
 
         //testdbへのパス
-        $pathToTestDB = "../back/SQLInjection/sqlitedb/testdb";
+        $pathToTestDB = $_SERVER['DOCUMENT_ROOT']."/vulne/back/SqlInjection/sqlitedb/testdb";
 
         //データベース接続・作成
         $con = new SqliteConnect($pathToTestDB);

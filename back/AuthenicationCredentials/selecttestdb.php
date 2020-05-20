@@ -12,7 +12,7 @@ $testData = array();
 $dbErrorMsg = "";
 
 //testdbへのパス
-$pathToTestDB = "../back/SQLInjection/sqlitedb/testdb";
+$pathToTestDB = $_SERVER['DOCUMENT_ROOT']."/vulne/back/AuthenicationCredentials/sqlitedb/testdb";
 
 //データベース接続・作成
 $con = new SqliteConnect($pathToTestDB);

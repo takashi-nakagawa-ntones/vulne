@@ -37,7 +37,7 @@ class SqliteConnect{
   */
   public function open( $filename ){
     $con = new SQLite3( $filename );
-    chmod( $filename, 0666 );
+    chmod( $filename, 0777 );
     return $con;
   }
    

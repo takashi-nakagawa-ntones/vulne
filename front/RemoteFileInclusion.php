@@ -1,7 +1,7 @@
 
 <?php include_once("parts/Include.php"); ?>
 
-<?php include_once("./../back/RemoteFileInclusion/remotefileinclusion.php");?>
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/vulne/back/RemoteFileInclusion/remotefileinclusion.php");?>
 
 <?php include_once("parts/PartsHead.php"); ?>
 
@@ -42,7 +42,7 @@
                     <form name="form1" id="form1" action="#" method="post">
                         <div class="form-group">
                             <label for="user_browsing_url">URL</label>
-                            <input type="text" class="form-control" name="user_browsing_url" id="user_browsing_url" value="//<?=$_SERVER['SERVER_NAME'];?>/front/RemoteFileInclusion.php?page=http://valune/include.php">
+                            <input type="text" class="form-control" name="user_browsing_url" id="user_browsing_url" value="//<?=$_SERVER['SERVER_NAME'];?>/vulne/front/RemoteFileInclusion.php?page=http://valune/include.php">
                         </div>
                         <input type="hidden" name="server_name" id="server_name" value="<?=$_SERVER['SERVER_NAME'];?>">
                         <input type="hidden" name="mcode" id="mcode" value="1">

